@@ -35,7 +35,7 @@ int main()
         printf("Wystapil blad polaczenia do socketu... \n");
     }
 
-    //recieve data from the server
+    //receive data from the server
 
     char server_response[256];
     recv(network_socket, &server_response, sizeof(server_response), 0);
