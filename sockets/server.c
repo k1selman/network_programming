@@ -1,9 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
-
 #include <sys/types.h>
 #include <sys/socket.h>
-
 #include <netinet/in.h>
 
 //TCP SERVER
@@ -40,7 +38,7 @@ int main()
     //send the message
     send(client_socket, server_message, sizeof(server_message), 0);
 
-    //close the socket
+    //close socket
     close(server_socket);
 
     return 0;
