@@ -10,7 +10,7 @@ int main()
 {
     // create string to hold data
 
-    char server_message[256] = "Witamy na serwerze!";
+    char server_message[256] = "Welcome to the server!";
 
     int server_socket;
     server_socket = socket(AF_INET, SOCK_STREAM, 0);
