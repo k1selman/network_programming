@@ -31,7 +31,7 @@ int main()
 
     if(connection_status == -1)
     {
-        printf("Socket connection error occured... \n");
+        printf("Socket connection error occurred... \n");
     }
 
     //recieve data from the server
