@@ -31,7 +31,7 @@ int main()
 
     if(connection_status == -1)
     {
-        printf("Wystapil blad polaczenia do socketu... \n");
+        printf("Socket connection error occured... \n");
     }
 
     //recieve data from the server
@@ -41,7 +41,7 @@ int main()
 
     //print out server response
 
-    printf("Serwer wyslal dane %s\n", server_response);
+    printf("Server sent data: %s\n", server_response);
 
     //close socket
 
