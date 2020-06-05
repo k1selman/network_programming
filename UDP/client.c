@@ -17,8 +17,12 @@ int main(int argc, char *argv[]){
         printf("Usage: server port\n");
         exit(1);
     }
-
-    sock = socket(AF_INET, SOCK_DGRAM, 0);
+    
+    // The socket() call creates a socket in the specified domain and of the specified type.
+    // AF_INET is the protocol family for Internet domain
+    // The following creates a datagram socket for intramachine use
+    sock = socket(AF_INET, SOCK_DGRAM, 0); 
+    //
 
     if(sock<0){
         error("Socket");
