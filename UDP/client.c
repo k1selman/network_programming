@@ -9,8 +9,8 @@ void error(char *);
 
 int main(int argc, char *argv[]){
     int sock, length, n;
-    struct sockaddr_in server, from;
-    struct hostent *hp;
+    struct sockaddr_in server, from; //IP Addressing(ip, port, type) Stuff
+    struct hostent *hp; //DNS stuff
     char buffer[256];
 
     if(argc!=3){
