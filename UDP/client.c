@@ -28,32 +28,39 @@ int main(int argc, char *argv[]){
         error("Socket");
     }
 
-     // Connect socket  using name specified by command iine 
+     // Get the IP address for destination server
     server.sin_family = AF_INET;
     hp = gethostbyname(argv[1]);
 
     if(hp == 0){
         error("Unknown host");
     }
-
+    
+    // Set the server address and port
     bcopy((char*)hp->h_addr, (char *)&server.sin_addr, hp->h_length);
     server.sin_port = htons(atoi(argv[2]));
 
     length = sizeof(struct sockaddr_in);
-
+    
+    // Prompt for message from user
     printf("Please enter the message: ");
 
     bzero(buffer, 256);
     fgets(buffer, 256, stdin);
+    
+    // Send message to socket (server)
     n = sendto(sock, buffer, strlen(buffer), 0, &server, length);
     if(n<0){
         error ("Sendto");
     }
+    
+    // Receive response from server
     n = recvfrom(sock,buffer,256,0,&from,&length);
     if(n<0){
         error("recvfrom");
     }
 
+     // Display response to user
     write(1,"Got an ack: ",12);
     write(1,buffer,n);
 
