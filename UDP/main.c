@@ -65,6 +65,7 @@ int main(int argc, char *argv[])
             error("Recvfrom");
         }
 
+        // Write what was recieved.
         write(1, "Received a datagram: ",21);
         write(1,buf,n);
         
