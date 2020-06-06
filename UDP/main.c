@@ -4,7 +4,7 @@
 #include <netdb.h>
 #include <stdio.h>
 
-//server
+
 
 void error(char *msg)
 {
