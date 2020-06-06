@@ -28,6 +28,7 @@ int main(int argc, char *argv[]){
         error("Socket");
     }
 
+     // Connect socket  using name specified by command iine 
     server.sin_family = AF_INET;
     hp = gethostbyname(argv[1]);
 
