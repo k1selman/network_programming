@@ -5,7 +5,7 @@ Starting with basic TCP, HTTP and UDP servers and clients, we will - over time -
 ## UDP
 **Libraries used:** sys/types.h, sys/socket.h, netinet/in.h, arpa/inet.h, netdb.h, stdio.h
 
-In order to run it you need to:
+**In order to run it one will have to:**
 
 **1.** Compile server and client source code
 
@@ -16,7 +16,7 @@ In order to run it you need to:
 ## TCP
 **Libraries used:** sys/types.h, sys/socket.h, netinet/in.h, stdio.h, stdlib.h
 
-In order to run it you need to:
+**In order to run it one will have to:**
 
 **1.** Compile server and client source code
 
@@ -27,7 +27,7 @@ In order to run it you need to:
 ## HTTP
 **Libraries used:** sys/types.h, sys/socket.h, netinet/in.h, arpa/inet.h, stdio.h, string.h, stdlib.h
 
-In order to run it you need to:
+**In order to run it one will have to:**
 
 **1.** Make sure you have your index.html file in the correct directory
 
